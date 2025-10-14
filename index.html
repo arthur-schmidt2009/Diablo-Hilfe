@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diablo 4 Freunde-Guide</title>
+  <meta name="description" content="Einsteiger-Guide für Freunde, die neu mit Diablo 4 anfangen – Klassen, Tipps & Ressourcen." />
+  <style>
+    /* === Farben & Layout === */
+    :root {
+      --bg: #0a0a0b;
+      --panel: rgba(26, 26, 28, 0.9);
+      --text: #f5f5f5;
+      --muted: #a1a1aa;
+      --accent: #c41e3a;
+      --border: rgba(255, 255, 255, 0.1);
+      --radius: 14px;
+      --shadow: 0 6px 16px rgba(0,0,0,.7);
+      --maxw: 900px;
+    }
+
+    /* === Grunddesign === */
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg) url('https://i.imgur.com/xgeBkeE.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text);
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      min-height: 100vh;
+    }
+
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 20px }
+
+    header {
+      background: rgba(20, 20, 22, 0.85);
+      border-bottom: 1px solid var(--border);
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(6px);
+    }
+
+    .nav { display:flex; justify-content:space-between; align-items:center; height:70px }
+    .brand { font-weight:800; font-size:1.3rem; color: var(--accent); text-transform:uppercase; letter-spacing:1px; }
+    .menu a {
+      margin-left: 20px;
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      transition: .2s;
+    }
+    .menu a:hover { color: var(--accent); }
+
+    section { padding: 80px 0; }
+    h1,h2,h3 { margin:0 0 10px; }
+    p { margin:0 0 14px; line-height:1.6; }
+    .lead { color: var(--muted); font-size: 1.1rem; }
+
+    /* === Karten & Layouts === */
+    .card {
+      background: var(--panel);
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(4px);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media(max-width:700px){ .grid-2 { grid-template-columns: 1fr; } }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: .25s;
+    }
+    .btn:hover { filter: brightness(1.15); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 25px 0;
+      color: var(--muted);
+      text-align: center;
+      background: rgba(20,20,22,0.8);
+      backdrop-filter: blur(6px);
+    }
+
+    img { max-width:100%; border-radius:12px; }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+<div class="overlay">
+  <header>
+    <div class="container nav">
+      <div class="brand">Diablo 4 – Freunde-Guide</div>
+      <nav class="menu">
+        <a href="#start">Start</a>
+        <a href="#klassen">Klassen</a>
+        <a href="#tipps">Tipps</a>
+        <a href="#ressourcen">Links</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="start">
+    <div class="container grid-2">
+      <div>
+        <h1>Willkommen, Nephalem!</h1>
+        <p class="lead">Dieser Guide ist für unsere Freunde, die neu in Diablo 4 einsteigen ⚔️</p>
+        <p>Hier findest du einfache Erklärungen, welche Klasse zu dir passt, wie du loslegst und worauf du achten solltest. Kein Stress – wir helfen dir beim Start in die Welt von <strong>Sanctuary</strong>!</p>
+        <a href="#klassen" class="btn">Zu den Klassen</a>
+      </div>
+      <div class="card">
+        <img src="https://cdn.mos.cms.futurecdn.net/hy3MRJ9vdtNGuHREqZkRii-1200-80.jpg" alt="Diablo 4 Artwork" />
+      </div>
+    </div>
+  </section>
+
+  <section id="klassen">
+    <div class="container">
+      <h2>Klassen für Einsteiger</h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>🪓 Barbar</h3>
+          <p>Ein kräftiger Nahkämpfer mit einfachen Fähigkeiten. Ideal für den Einstieg und alle, die gern mitten im Getümmel stehen.</p>
+        </div>
+        <div class="card">
+          <h3>🪄 Zauberin</h3>
+          <p>Starke Fernkampf-Magierin mit Feuer-, Eis- und Blitzmagie. Braucht etwas Timing, belohnt dich aber mit enormem Schaden.</p>
+        </div>
+        <div class="card">
+          <h3>🏹 Jägerin</h3>
+          <p>Schnell, beweglich und vielseitig – perfekt für Spieler, die gerne taktisch und flink kämpfen.</p>
+        </div>
+        <div class="card">
+          <h3>🐺 Druide</h3>
+          <p>Verwandelt sich in Bären oder Wölfe und nutzt Naturmagie. Robust und ausgewogen – eine gute Allround-Wahl.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tipps">
+    <div class="container">
+      <h2>Einsteiger-Tipps</h2>
+      <div class="card">
+        <ul>
+          <li>⚔️ Spiele zuerst die Kampagne – sie erklärt dir die Welt und Mechaniken.</li>
+          <li>💰 Sammle Gold & Materialien. Du brauchst sie, um Ausrüstung zu verbessern.</li>
+          <li>🗺️ Erkunde alles – viele Nebenquests geben Erfahrung und neue Fähigkeiten.</li>
+          <li>💀 Keine Angst vorm Sterben – du lernst mit jedem Versuch dazu!</li>
+          <li>🤝 Gemeinsam spielen macht’s leichter – XP-Bonus inklusive!</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="ressourcen">
+    <div class="container">
+      <h2>Nützliche Links</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://maxroll.gg/d4" target="_blank">🧭 Maxroll.gg – einfache Anfänger-Guides</a></li>
+          <li><a href="https://d4builds.gg" target="_blank">⚒️ D4Builds.gg – eigene Builds planen</a></li>
+          <li><a href="https://news.blizzard.com/de-de/diablo4" target="_blank">🔥 Offizielle Blizzard-Seite (Patchnotes)</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <div class="container">
+      <h2>Freunde & Kontakt</h2>
+      <div class="card">
+        <p>Wenn du Fragen hast oder mitspielen willst, melde dich einfach:</p>
+        <p><strong>Discord:</strong> <a href="#">Unser Diablo 4 Server</a></p>
+        <p><strong>BattleTag:</strong> <em>deinName#1234</em></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Freunde-Guide für Diablo 4 – Fanprojekt</div>
+  </footer>
+</div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
